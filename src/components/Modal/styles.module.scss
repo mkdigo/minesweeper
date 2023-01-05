@@ -1,0 +1,40 @@
+.modal {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+    gap: 1rem;
+
+    background: var(--color-white);
+    color: var(--color-black);
+    border-radius: 0.5rem;
+
+    h1,
+    h2,
+    h3,
+    p {
+      text-align: center;
+    }
+
+    &.danger {
+      h1,
+      h2,
+      h3 {
+        color: var(--color-red-500);
+      }
+    }
+  }
+}

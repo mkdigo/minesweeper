@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-white: #f1f1f1;
+  --color-black: #242424;
+  --color-brown-400: #5f331a;
+  --color-brown-500: #7e4423;
+  --color-blue-500: #4492db;
+  --color-red-500: #b91616;
+}
+
+body {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  background: var(--color-blue-500);
+  color: var(--color-black);
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+
+  &:active {
+    filter: brightness(0.9);
+  }
+}

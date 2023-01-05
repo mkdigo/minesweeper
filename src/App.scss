@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.data {
+  width: 100%;
+  max-width: 500px;
+
+  div {
+    display: flex;
+
+    span {
+      width: 50%;
+
+      &:nth-child(even) {
+        text-align: right;
+      }
+    }
+  }
+}
+
+.game {
+  --fieldSize: 30px;
+  user-select: none;
+  background: var(--color-brown-500);
+  border: solid 1px var(--color-brown-400);
+
+  ul {
+    display: flex;
+
+    width: fit-content;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: var(--fieldSize);
+      height: var(--fieldSize);
+
+      border: solid 1px var(--color-brown-400);
+
+      img,
+      svg {
+        width: 80%;
+
+        &.flag {
+          color: #a00;
+        }
+      }
+
+      .cover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: green;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
